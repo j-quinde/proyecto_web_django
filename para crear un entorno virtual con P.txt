@@ -1,0 +1,27 @@
+para crear un entorno virtual con Python
+
+1- abrir powershell como administrador
+2- dirigirnos a la ruta donde se creara el entorno virtual, en mi caso fue cd "C:\Users\Nitro 5\Documents\Mis_entornos\mi_web"
+3- ejecutar el comando: python -m venv nombre_entorno
+4- activar el entorno: nombre_entorno/Scripts/actívate
+-- para desactivar usar el comando: deactivate
+
+5- si da error ejecutar el comando: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+6- Darle a SI
+7- Con eso ya se puede activar el entorno. Al inicio de la linea de comando tiene que aparecer en verde el nombre del entorno asi: 
+	(venv) PS C:\Users\Nitro 5\Documents\Mis_entornos\mi_web> 
+8- Instalar django con: pip install django
+9- Comprobar que se instalo django con: pip freeze
+10- Crear la carpeta src con: mkdir src
+11- Ingresar a la carpeta creada con: cd src
+12- Ejecutar el comando: django-admin startproject nombre_proyecto
+13- Entrar a la carpeta del proyecto donde se encuentra el archivo manage.py
+14- Iniciar el servidor (sitio donde se correo el sitio web) con el comando: python manage.py runserver
+15- si se requiere hacer migración, ejecutar ctrl+c para salir de la ejecución del servidor y ejecutar los comandos: python manage.py migrate
+16- volver a iniciar el servidor
+17- para crear un super usuario ejecutar: python manage.py createsuperuse
+
+
+
+
+
