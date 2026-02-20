@@ -3,7 +3,7 @@ para crear un entorno virtual con Python
 1- abrir powershell como administrador
 2- dirigirnos a la ruta donde se creara el entorno virtual, en mi caso fue cd "C:\Users\Nitro 5\Documents\Mis_entornos\mi_web"
 3- ejecutar el comando: python -m venv nombre_entorno
-4- activar el entorno: nombre_entorno/Scripts/actívate
+4- activar el entorno: nombre_entorno/Scripts/activate
 -- para desactivar usar el comando: deactivate
 
 5- si da error ejecutar el comando: Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
