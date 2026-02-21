@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Pendientes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: #e8e5ed;
+            font-family: "Open Sans", sans-serif;
+            padding-top: 60px;
+        }
+
+        .container{
+            max-width: 550px;
+            margin: auto;
+            border-radius: 10px;
+            background-color: #f7f6f8;
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0,0,0,0.21);
+        }
+
+        h1,h2,h3,h4,h5,h6{
+            font-family: "Inconsolata", monospace;
+        }
+
+        a,p {
+            color: #1f91c7
+        }
+
+        .barra-superior{
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg,#5ae3e6 0%, #17c9cd 43%, #17c9cd 100%);
+        }
+
+        .barra-superior button{
+            background-color: rgb(255, 255, 255);
+            border-radius: 30px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block content %}
+        {% endblock content %}
+    </div>
+</body>
+</html>
