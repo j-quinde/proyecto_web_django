@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
             background-color: #e8e5ed;
@@ -47,6 +48,97 @@
             border-radius: 30px;
             cursor: pointer;
         }
+
+        .barra-superior a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .envoltorio-tarea{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: #ffffff;
+            border-top: 1px solid rgb(225, 225, 225);
+        }
+
+        .titulo-tarea{
+            display: flex;
+        }
+
+        .titulo-tarea a{
+            text-decoration: none;
+            color: #000000;
+            margin-left: 10px;
+        }
+
+        .icono-tarea-completa{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(67,237,34);
+            border-radius: 50px;
+        }
+
+        .icono-tarea-incompleta{
+            height: 20px;
+            width: 20px;
+            background-color: rgb(180,180,180);
+            border-radius: 50px;
+        }
+
+        .enlace-eliminar {
+            text-decoration: none;
+            font-weight: 900;
+            color: #ff2121;
+            line-height: 0;
+        }
+
+        .envoltorio-agregar-buscar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        #enlace-agregar {
+            color: darkslategray;
+            text-decoration: none;
+            font-size: 20px;
+            text-shadow: 1px 1px #81413B;
+        }
+
+        #enlace-agregar i{
+            color: #26ee66;
+        }
+
+        input[type=text], input[type=password], textarea{
+            border: 1px solid #d7d7d7;
+            border-radius: 5px;
+            padding: 10px;
+            {#width: 90%;#}
+        }
+
+        label{
+            padding-top: 1px !important;
+            display: block;
+        }
+
+        .button{
+            border: 1px solid #d7d7d7;
+            background-color: #fafafa;
+            color: #717171;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .cuerpo-tarjeta{
+            padding: 20px;
+        }
+
     </style>
 </head>
 <body>
