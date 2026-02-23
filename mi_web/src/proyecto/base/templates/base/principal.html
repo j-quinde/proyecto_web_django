@@ -45,13 +45,22 @@
 
         .barra-superior button{
             background-color: rgb(255, 255, 255);
-            border-radius: 30px;
+            border-radius: 10px;
             cursor: pointer;
+            border: 1px solid #d7d7d7;
+            color: #717171;
+            padding: 10px;
+            font-size: 14px;
         }
 
         .barra-superior a{
             text-decoration: none;
             color: #ffffff;
+        }
+        .envoltorio-items-tarea{
+            background: #ffffff;
+            padding-bottom: 7px;
+            border-radius: 10px;
         }
 
         .envoltorio-tarea{
@@ -94,29 +103,46 @@
             line-height: 0;
         }
 
-        .envoltorio-agregar-buscar{
+        .envoltorio-agregar-buscar {
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 10px;
         }
+        .envoltorio-agregar-buscar form{
+            {#margin-top: 20px;#}
+            display: flex;
+        }
 
-        #enlace-agregar {
-            color: darkslategray;
+        {##enlace-agregar {#}
+        {#    color: darkslategray;#}
+        {#    text-decoration: none;#}
+        {#    font-size: 20px;#}
+        {#    text-shadow: 1px 1px #81413B;#}
+        {# #}
+
+        #enlace-agregar{
+            background-color: #5DC25D;
+            border-color: #4cae4c;
+            color: #ffffff;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
             text-decoration: none;
-            font-size: 20px;
-            text-shadow: 1px 1px #81413B;
+            {#margin-top: 20px;#}
         }
 
         #enlace-agregar i{
-            color: #26ee66;
+            {#color: #26ee66;#}
+            color: #ffffff;
         }
 
         input[type=text], input[type=password], textarea{
             border: 1px solid #d7d7d7;
             border-radius: 5px;
             padding: 10px;
-            {#width: 90%;#}
+            width: 90%;
         }
 
         label{
@@ -138,6 +164,18 @@
         .cuerpo-tarjeta{
             padding: 20px;
         }
+
+        #id_completo {
+            cursor: pointer;
+            height: 20px;
+            width: 20px;
+            accent-color: #1f91c7; /* color de la marca y fondo */
+            border: 2px solid #1f91c7 !important; /* borde personalizado */
+            border-radius: 4px; /* opcional, esquinas redondeadas */
+            background-color: #fafafa;
+        }
+
+
 
     </style>
 </head>

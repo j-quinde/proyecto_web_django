@@ -7,9 +7,9 @@
         <h3 style="margin:0">Tienes <i>{{ count }}</i> tarea{{ count|pluralize }} incompleta{{ count|pluralize }}</h3>
     </div>
     {% if request.user.is_authenticated %}
-        <form method="post" action="{%url 'logout' %}">
+        <form method="post" action="{%url 'logout' %}" style="margin-top: 20px;">
             {% csrf_token %}
-            <button  type="submit"> Salir </button>
+            <button type="submit"><i class="fa fa-sign-out" aria-hidden="true"></i>Salir </button>
         </form>
     {% else %}
         <a href="{% url 'login' %}">Ingresar</a>
@@ -17,13 +17,11 @@
 </div>
 
 <div class="envoltorio-agregar-buscar">
-    <form method="GET" style="margin-top: 20px; display: flex;">
-        <label>
-            <input type="text" name="area-buscar" value="{{ valor_buscado }}">
-        </label>
+    <form method="GET">
+        <input type="text" name="area-buscar" value="{{ valor_buscado }}" aria-label="Buscar">
         <input class="button" type="submit" value="Buscar">
     </form>
-    <a id="enlace-agregar" href="{% url 'crear-tarea' %}"><i class="fa fa-plus-square" style="font-size:18px" aria-hidden="true"></i> Nueva Tarea</a>
+    <a id="enlace-agregar" href="{% url 'crear-tarea' %}"><i class="fa fa-plus" aria-hidden="true"></i> Agregar Tarea</a>
 </div>
 
 <div class="envoltorio-items-tarea">
@@ -34,7 +32,7 @@
                     <div class="icono-tarea-completa"></div>
                         <i><s><a href="{% url 'editar-tarea' tarea.id %}">{{ tarea }}</a></s></i>
                 </div>
-                <a class="enlace-eliminar" href="{% url 'eliminar-tarea' tarea.id %}"><i class="fa fa-trash-o" style="font-size:20px"></i></a>
+                <a class="enlace-eliminar" href="{% url 'eliminar-tarea' tarea.id %}"><i class="fa fa-trash-o" aria-hidden="true" style="font-size:20px"></i></a>
             {% else %}
                 <div class="titulo-tarea">
                     <div class="icono-tarea-incompleta"></div>
